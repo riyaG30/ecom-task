@@ -34,7 +34,8 @@ const AnalyseButton = () => {
 
       setCategoryCounts(counts);
       setShowChart(true);
-    } catch (error) {
+    } 
+    catch (error) {
       console.error('Error fetching category counts:', error);
     }
   };

@@ -13,7 +13,7 @@ function App() {
     const fetchProducts = async () => {
       const productResponse = await axios.get('https://fakestoreapi.com/products');
       const categoryResponse = await axios.get('https://fakestoreapi.com/products/categories');
-
+      
       setProducts(productResponse.data);
       setCategories(categoryResponse.data);
       setFilteredProducts(productResponse.data); 
