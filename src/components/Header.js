@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, ButtonGroup, Button, Menu, MenuItem, InputBase, IconButton } from '@mui/material'; // Keep these imports for potential layout needs
+import { AppBar, Toolbar, Typography, ButtonGroup, Button, Menu, MenuItem, InputBase, IconButton } from '@mui/material'; 
 import SearchIcon from '@mui/icons-material/Search';
-const Header = ({ categories, onSearchChange, onCategoryChange, initialCategory = 'All' }) => {
+
+  const Header = ({ categories, onSearchChange, onCategoryChange, initialCategory = 'All' }) =>
+   {
   const [anchorEl, setAnchorEl] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [searchTerm, setSearchTerm] = useState('');
